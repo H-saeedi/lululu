@@ -5,7 +5,7 @@ import "./account.sol";
 
 // Factory contract batch manage Account contract.
 contract Factory {
-    address owner;
+    address private owner;
 
     constructor() {
         owner = msg.sender;

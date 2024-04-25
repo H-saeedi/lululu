@@ -38,8 +38,8 @@ interface IAccount {
 
 // Account contract receive/send ETH, ERC20 Token, ERC721 NFT and call any other contract.
 contract Account is IAccount {
-    address owner;
-    address operator;
+    address private owner;
+    address private operator;
 
     constructor() {
         owner = msg.sender;
