@@ -29,7 +29,7 @@ contract Token {
     }
 
     function totalSupply() public pure returns (uint256) {
-        return 2100000000;
+        return 2100000000 * 10**decimals();
     }
 
     function balanceOf(address _owner) public view returns (uint256 balance) {
@@ -86,3 +86,4 @@ contract Token {
         emit Transfer(_from, _to, _value);
     }
 }
+
